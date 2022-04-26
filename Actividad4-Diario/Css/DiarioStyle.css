@@ -1,0 +1,73 @@
+.paragraph {
+    font: oblique 120% sans-serif bold;
+}
+.Redirection {
+    font: oblique bold 120% cursive;
+}
+
+.caja {
+    margin: 20px auto 40px auto;
+    border: 1px solid #d9d9d9;
+    height: 30px;
+    overflow: hidden;
+    width: 230px;
+    position: relative;
+}
+
+select {
+    background: transparent;
+    background-color: DodgerBlue;
+    border-color: #fff transparent transparent transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+}
+
+    select:focus {
+        outline: none;
+    }
+
+.caja::after {
+    content: "\025be";
+    display: table-cell;
+    padding-top: 7px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    pointer-events: none;
+}
+
+input {
+    border: none;
+    background: green;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 200px;
+    color: white;
+    margin-left: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    font-family: Roboto, cursive;
+}
+
+#OriginPage {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: #318aac;
+    border: 2px solid;
+    border-color: #318aac;
+    position: relative;
+}
+
+#OriginPage:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
